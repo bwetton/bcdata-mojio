@@ -1,0 +1,162 @@
+#region Event Codes / APP MSG Codes / MSG Codes
+
+        // ------------------------------------------------------------------------------
+        // IGNITION
+        // ------------------------------------------------------------------------------
+        internal const int C_E_IGN_OFF = 0;
+        internal const int C_E_IGN_ON = 1;
+
+        // ------------------------------------------------------------------------------
+        // POWER ON/OFF, WAKEUP, SLEEP
+        // ------------------------------------------------------------------------------
+        internal const int C_E_SLEEP_START = 10;
+        internal const int C_E_WAKEUP_INPUT = 11;
+        internal const int C_E_WAKEUP_DISTURBANCE = 12;
+        internal const int C_E_WAKEUP_TIMER = 19;
+
+        // ------------------------------------------------------------------------------
+        // CONNECT / DISCONNECT
+        // ------------------------------------------------------------------------------
+        internal const int C_E_DEV_CONNECT = 20;
+        internal const int C_E_DEV_DISCONNECT = 21;
+
+        // ------------------------------------------------------------------------------
+        // VBUS
+        // ------------------------------------------------------------------------------
+        internal const int C_E_VBUS_FIRST_VEH_DETECTION = 120;
+        internal const int C_E_VBUS_STATE_VEH_DETECTION = 121;
+        internal const int C_E_VBUS_STATE_VEH_DETECTION_TIMEOUT = 122;
+
+        // ------------------------------------------------------------------------------
+        // TRIP
+        // ------------------------------------------------------------------------------
+        internal const int C_E_TRIP_TIME_BASED = 100;
+        internal const int C_E_TRIP_HDG_BASED = 101;
+
+        // ------------------------------------------------------------------------------
+        // MOVING, NOT MOVING, IDLE
+        // ------------------------------------------------------------------------------
+        internal const int C_E_IGN_ON_MOVING = 110;
+        internal const int C_E_IGN_ON_NOT_MOVING = 111;
+        internal const int C_E_IGN_ON_IDLE_START = 118;
+        internal const int C_E_IGN_ON_IDLE_STOP = 119;
+
+        // ------------------------------------------------------------------------------
+        // HARSH ACCELERATION / DECELERATION
+        // ------------------------------------------------------------------------------
+        internal const int C_E_HARSH_FW = 130;
+        internal const int C_E_HARSH_BRK = 131;
+        internal const int C_E_HARSH_LEFT = 132;
+        internal const int C_E_HARSH_RIGHT = 133;
+        internal const int C_E_HARSH_UP = 134;
+        internal const int C_E_HARSH_DOWN = 135;
+
+        // ------------------------------------------------------------------------------
+        // ACCELEROMETER
+        // ------------------------------------------------------------------------------
+        internal const int C_E_ACCL_ALIGNED_CURRENT = 136;
+        internal const int C_E_ACCL_ALIGNED_NOTCURRENT = 137;
+        internal const int C_E_ACCL_NOT_ALIGNED = 138;
+
+        // ------------------------------------------------------------------------------
+        // UPDATE
+        // ------------------------------------------------------------------------------
+        internal const int C_E_UPDATE_CONFIG_START = 231;
+        internal const int C_E_UPDATE_FW_START = 232;
+        internal const int C_E_UPDATE_OBD2_FW_START = 233;
+        internal const int C_E_UPDATE_OBD2_DB_START = 234;
+        internal const int C_E_UPDATE_CONFIG_FINISH = 235;
+        internal const int C_E_UPDATE_FW_FINISH = 236;
+        internal const int C_E_UPDATE_OBD2_FW_FINISH = 237;
+        internal const int C_E_UPDATE_OBD2_DB_FINISH = 238;
+
+        // ------------------------------------------------------------------------------
+        // IMPACT
+        // ------------------------------------------------------------------------------
+        internal const int C_E_IMPACT = 255;
+        internal const int C_E_POST_IMPACT = 254;
+
+        // ------------------------------------------------------------------------------
+        // TOWING
+        // ------------------------------------------------------------------------------
+        internal const int C_E_TOW_START = 240;
+        internal const int C_E_TOW_BC = 241;
+        internal const int C_E_TOW_END = 242;
+        internal const int C_E_TOW_TILT_DETECTED = 243;
+
+        // ------------------------------------------------------------------------------
+        // GPS
+        // ------------------------------------------------------------------------------
+        internal const int C_E_GPS_ACQ = 141;
+        internal const int C_E_GPS_LOST = 142;
+
+        // ------------------------------------------------------------------------------
+        // APPLICATION MESSAGES
+        // ------------------------------------------------------------------------------
+        internal const int C_APP_MSG = 1000;
+        internal const int C_AMSG_IPREQ = 2000;
+        internal const int C_AMSG_IPRPT = 3000;
+        internal const int C_AMSG_TIMESYNC = 4000;
+        internal const int C_AMSG_DNLD_IDRPT = 5000;
+        internal const int C_AMSG_DNLD_AUTH = 6000;
+        internal const int C_AMSG_DNLD_REQ = 7000;
+        internal const int C_AMSG_DNLD_UPD = 8000;
+        internal const int C_AMSG_DNLD_CMPL = 9000;
+        internal const int C_AMSG_DNLD_FW = 10000;
+        internal const int C_AMSG_DNLD_FILE = 11000;
+        internal const int C_AMSG_DNLD_OTA = 12000;
+        internal const int C_AMSG_ATCMD = 13000;
+        internal const int C_AMSG_VER_RPT = 14000;
+        internal const int C_AMSG_GPS_RPT = 15000;
+        internal const int C_AMSG_MESG_STAT_RPT = 16000;
+        internal const int C_AMSG_STAT_RPT = 17000;
+        internal const int C_AMSG_GEO_ACT = 18000;
+        internal const int C_AMSG_GEO_UPD = 19000;
+        internal const int C_AMSG_PROBEID_RPT = 20000;
+        internal const int C_AMSG_CAPTURE_RPT = 21000;
+        internal const int C_AMSG_VIN_DECODE_LOOKUP = 22000;
+        internal const int C_AMSG_SQCMD = 23000;
+        internal const int C_AMSG_SQSTAT = 24000;
+
+        // ------------------------------------------------------------------------------
+        // APPLICATION MESSAGES - ACCELEROMETER DATA
+        // ------------------------------------------------------------------------------
+        internal const int C_AMSG_ACCL       = 25000;
+        internal const int C_AMSG_ACCL_LONG0 = 25001;
+        internal const int C_AMSG_ACCL_SHRT0 = 25002;
+        internal const int C_AMSG_ACCL_LONG1 = 25003;
+        internal const int C_AMSG_ACCL_SHRT1 = 25004;
+        internal const int C_AMSG_ACCL_LONG2 = 25005;
+        internal const int C_AMSG_ACCL_SHRT2 = 25006;
+        internal const int C_AMSG_ACCL_LONG3 = 25007;
+        internal const int C_AMSG_ACCL_SHRT3 = 25008;
+        internal const int C_AMSG_ACCL_LONG4 = 25009;
+        internal const int C_AMSG_ACCL_SHRT4 = 25010;
+        internal const int C_AMSG_ACCL_LONG5 = 25011;
+        internal const int C_AMSG_ACCL_SHRT5 = 25012;
+        internal const int C_AMSG_ACCL_SHRT6 = 25014;
+        internal const int C_AMSG_ACCL_SHRT7 = 25016;
+
+        // ------------------------------------------------------------------------------
+        // APPLICATION MESSAGES - VBUS
+        // ------------------------------------------------------------------------------
+        internal const int C_AMSG_VBUS_DATA_RPT = 26010;
+        internal const int C_AMSG_VBUS_VEHID_RPT = 26020;
+        internal const int C_AMSG_VBUS_DTC = 26030;
+        internal const int C_AMSG_VBUS_REG_DEV = 26040;
+        internal const int C_AMSG_VBUS_DTC_FF = 26050;
+        internal const int C_AMSG_VBUS_DIAG = 26060;
+
+        // ------------------------------------------------------------------------------
+        // MISC. MESSAGES
+        // ------------------------------------------------------------------------------
+        internal const int C_MSG_NULL = 30000;
+        internal const int C_MSG_ACK = 31000;
+        internal const int C_MSG_ID_RPT = 32000;
+        internal const int C_MSG_USR_RPT = 33000;
+        internal const int C_MSG_CFG_PARAM = 34000;
+        internal const int C_MSG_UNIT_REQ = 35000;
+        internal const int C_MSG_LOCATE_RPT = 36000;
+        internal const int C_MSG_DEV_VER = 37000;
+
+        #endregion Event Codes / APP MSG Codes / MSG Codes
